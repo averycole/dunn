@@ -1,0 +1,6 @@
+<launch>
+
+    <node name="encoders" pkg="us_digital_encoders" type="taylor_dunn_node.py" />
+    <node name="speedometer" pkg="us_digital_encoders" type="speedometer.py" />
+
+</launch>

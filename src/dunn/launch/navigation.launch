@@ -1,0 +1,8 @@
+<launch>
+
+	<include file="$(find dunn)/launch/dunn_sensors.launch"/>
+	<include file="$(find dunn)/launch/dunn_transforms.launch"/>
+	<include file="$(find description)/launch/description.launch"/>
+	<node pkg="rviz" type="rviz" name="rviz" args="-d $(find dunn)/rviz/dunn.rviz"/>
+
+</launch>
